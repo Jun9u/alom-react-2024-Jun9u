@@ -1,0 +1,26 @@
+name: Task
+description: Track a concrete unit of work
+title: "[Task] "
+type: Task
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: State the expected outcome
+      placeholder: What needs to be achieved?
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Done when
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Context or references
+      description: Optional links, dependencies, or constraints
