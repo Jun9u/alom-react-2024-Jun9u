@@ -1,0 +1,26 @@
+name: Bug report
+description: Report an unexpected result or broken behavior
+title: "[Bug] "
+type: Bug
+body:
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: Include inputs, conditions, and error messages when available
+  - type: textarea
+    id: context
+    attributes:
+      label: Environment and logs
